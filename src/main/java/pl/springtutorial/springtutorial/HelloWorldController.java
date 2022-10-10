@@ -13,7 +13,7 @@ public class HelloWorldController {
 
     @RequestMapping("goodbye")
     public String goodbye(){
-        return "Goodbye 1st site <br>" +
+        return "Goodbye from 1st site ;) <br>" +
                 "<a href=\"/\">welcome</a>";
     }
 }
