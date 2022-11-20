@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<br>
+<form method="post" th:action="@{/Calculator}" class="">
+    <div class="container">
+        <label> <b>Liczba a</b></label>
+        <input id="a" type="text" placeholder="Enter a" name="a" required>
+
+        <label><b>Operacja</b></label>
+        <select name="znak">
+            <option selected="selected">+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+        </select>
+
+        <label><b>Password</b></label>
+        <input id="b" type="text" placeholder="Enter b" name="b" required>
+
+        <button type="submit">Wykonaj</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <br> wYnik wynosi:
+        <p th:text="${wyn}"></p>
+    </div>
+</form>
+
+</body>
+</html>
